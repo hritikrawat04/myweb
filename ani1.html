@@ -1,0 +1,104 @@
+<!doctype html>
+
+
+<head> <title> Animation </title> </head>
+
+<style>
+@keyframes showadd{
+0%{background-image:url(images/a1.gif);}
+10%{background-image:url(images/a2.gif);}
+20%{background-image:url(images/a3.gif);}
+30%{background-image:url(images/a4.gif);}
+40%{background-image:url(images/a5.gif);}
+50%{background-image:url(images/a6.gif);}
+60%{background-image:url(images/a7.gif);}
+70%{background-image:url(images/a8.gif);}
+80%{background-image:url(images/a9.gif);}
+90%{background-image:url(images/a10.gif);}
+100%{background-image:url(images/a11.gif);}
+}
+@keyframes multicolor
+{
+10%{color:orange}
+20%{color:white}
+30%{color:green}
+40%{color:cyan}
+50%{color:blue}
+60%{color:lime}
+70%{color:gold}
+80%{color:yellow}
+90%{color:brown}
+100%{color:purple}
+}
+#banner{
+width:70%;
+height:500px;
+box-shadow:10px 10px 10px gray;
+margin:auto;
+background-image:url(images/p1.jpg);
+background-size:100% 100%;
+animation:showadd 45s infinite;
+}
+#topad
+{
+color:red;
+font-size:50px;
+font-family:arial black;
+text-transform:uppercase;
+box-shadow:10px 10px 10px black;
+animation:multicolor 12s infinite;
+}
+
+
+
+
+@keyframes blink 
+{
+from{opacity:0}
+to{opacity:0.99}
+}
+@keyframes move 
+{
+from:margin-left:-100px;}
+to:{margin-left:100px;}
+}
+
+#myheading
+{
+color:red;
+display:block;
+width: 260px;
+animation:blink 0.50s ease-in infinite alternate;
+}
+
+#myheading2
+{
+color:blue;
+display:block;
+width: 260px;
+text-shadow:5px 5px 5px black;
+animation:move 16s linear infinite;
+}
+
+
+ </style>
+
+<body>
+<div id="banner">
+
+<div id="topad">
+Cartoon </div>
+</div>
+
+
+
+
+<h1 id= "myheading"> HRITIK RAWAT </h1>
+<h1 id= "myheading2"> Shiv Shambhu  </h1>
+
+
+
+
+</body>
+
+</html>
